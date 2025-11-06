@@ -1,0 +1,118 @@
+body {
+    background-image: url('imagenes/fondito3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Courier New', monospace;
+}
+
+/* --- HEADER --- */
+header {
+    background-color: #7a8b6e;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+nav button {
+    background-color: #e9640f;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-family: 'Courier New', monospace;;
+}
+
+nav button:hover {
+    transform: scale(1.05);
+}
+
+nav button.activo {
+    background-color: #f8b97a;
+    color: #2b1a0f;
+}
+
+/* contenido central */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.info-contenedor {
+    background-color: #f8b97a;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 40px;
+    max-width: 1200px;
+    gap: 30px;
+    box-sizing: border-box;
+     font-family: "Architects Daughter", cursive;
+}
+
+.texto {
+    flex: 2;
+    color: #ffffff;
+    font-size: 15.03px;
+}
+
+.texto h2 {
+    text-align: center;
+    color: #e9640f;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.texto p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.video {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video video {
+    width: 100%;
+    max-width: 270px;
+    border-radius: 10px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* footer */
+footer {
+    background-color: #7a8b6e;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: bold;
+}
+
+
+nav button.activo {
+  background-color: #f3a55a; /* más claro que el normal cuando este seleccionado */
+  color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+.architects-daughter-regular {
+  font-family: "Architects Daughter", cursive;
+  font-weight: 400;
+  font-style: normal;
+}

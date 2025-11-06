@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Badeen+Display&family=Parkinsans:wght@300..800&family=Playwrite+DE+SAS:wght@100..400&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forma de trabajo</title>
+    <link rel="stylesheet" href="forma.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="pagina.html">Perfil</a>
+            <a href="info.html">Información</a>
+            <a href="trabajos.html">Trabajos</a>
+            <a href="forma.html" class="activo">Forma de trabajo</a>
+            <a href="evidencias.html">Evidencias</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contenedor"> 
+            <h2>Forma de trabajo</h2>
+           
+            <div class="contenido">
+    <div class="columna-izquierda"> 
+        <img src="formima/yop.jpg" alt="foto principal" class="foto1">
+    </div>
+    
+
+    <div class="columna-centro">
+        <p>
+            Mi forma de trabajo comienza desde la improvisación. Me gusta observar mi entorno e imaginar las cosas que podría crear con él; incluso cuando se trata de una tarea, mirar a mi alrededor me ayuda a pensar en lo que quiero plasmar.
+            <br><br>
+            Para comenzar un proyecto, me gusta tener un boceto de lo que quiero y dejar que las ideas surjan de mi imaginación. No me gusta buscar en internet a menos que sea necesario o tenga que investigar sobre el tema que voy a representar. Si el trabajo tiene un tema específico, procuro informarme lo más posible para tener una visión clara y no crear una idea equivocada que afecte el resultado.
+            <br><br>
+            Me gusta mostrar que aquello que muchos consideran sencillo o fácil también puede comunicar mucho.
+        </p>
+    </div>
+
+    <div class="columna-derecha">
+        <img src="formima/gato.JPG" alt="gato" class="gato">
+        <img src="formima/gato2.jpg" alt="gato2" class="gato">
+    </div>
+</div>
+
+<div class="redes">
+    <a href="https://www.facebook.com/eve.maringonzalez/?locale=es_LA" target="_blank">
+        <img src="formima/face.png" alt="Facebook">
+    </a>
+    <a href="https://www.instagram.com/yachanito_lk/" target="_blank">
+        <img src="formima/insta.png" alt="Instagram">
+    </a>
+    <a href="https://x.com/YachanitoL6905" target="_blank">
+        <img src="formima/x.png" alt="X">
+    </a>
+</div>
+        </section>
+    </main>
+
+    <footer>
+        <p>@2025 Derechos Reservados Evelyn Monserrat</p>
+    </footer>
+<script>
+document.querySelectorAll('.contenido img').forEach(img => {
+  img.addEventListener('click', () => {
+    /*Si ya está activa, la desactiva */
+    if (img.classList.contains('activa')) {
+      img.classList.remove('activa');
+      clearTimeout(img._timer);
+    } else {
+      /* Activa la imagen y la deja 2 segundos*/
+      img.classList.add('activa');
+      img._timer = setTimeout(() => {
+        img.classList.remove('activa');
+      }, 2000);
+    }
+  });
+});
+</script>
+
+</body>
+</html>

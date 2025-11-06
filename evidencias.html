@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Badeen+Display&family=Parkinsans:wght@300..800&family=Playwrite+DE+SAS:wght@100..400&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evidencias</title>
+  <link rel="stylesheet" href="evidencias.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="pagina.html">Perfil</a>
+            <a href="info.html">Información</a>
+            <a href="trabajos.html">Trabajos</a>
+            <a href="forma.html">Forma de trabajo</a>
+            <a href="evidencias.html" class="activo">Evidencias</a>
+        </nav>
+    </header>
+
+  <div class="contenedor-evidencias">
+    <div class="texto-evidencias">
+     <h2 class="titulo-evidencias">Evidencias</h2>
+        <p>
+        Gracias al esfuerzo y al aprendizaje que he adquirido, he tenido la oportunidad de exponer mis trabajos 
+        y participar en conferencias relacionadas con mi carrera.
+      </p>
+      <p>
+        Estas experiencias me han permitido aprender más sobre mi área, fortalecer mis habilidades y tener una 
+        visión más clara de los objetivos que quiero alcanzar profesionalmente.
+      </p>
+    </div>
+
+    <div class="imagenes-evidencias">
+      <img src="evima/evidencia1.png" alt="Evidencia 1">
+      <img src="evima/evidencia2.png" alt="Evidencia 2">
+      <img src="evima/evidencia3.png" alt="Evidencia 3">
+      <img src="evima/evidencia4.png" alt="Evidencia 4">
+    </div>
+  </div>
+
+  <footer>
+    <p>@2025 Derechos Reservados Evelyn Monserrat</p>
+  </footer>
+
+  <script>
+    const imagenes = document.querySelectorAll('.imagenes-evidencias img');
+
+    imagenes.forEach(img => {
+      img.addEventListener('click', () => {
+        if (img.classList.contains('ampliada')) {
+          img.classList.remove('ampliada');
+        } else {
+          img.classList.add('ampliada');
+          setTimeout(() => img.classList.remove('ampliada'), 2000);
+        }
+      });
+    });
+  </script>
+</body>
+</html>

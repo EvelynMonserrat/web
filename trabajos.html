@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Badeen+Display&family=Parkinsans:wght@300..800&family=Playwrite+DE+SAS:wght@100..400&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajos</title>
+    <link rel="stylesheet" href="trabajos.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="pagina.html">Perfil</a>
+            <a href="info.html">Información</a>
+            <a href="trabajos.html" class="activo">Trabajos</a>
+            <a href="forma.html">Forma de trabajo</a>
+            <a href="evidencias.html">Evidencias</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="mensaje">
+        <p>Seleccione la imagen para ver más de cerca</p>
+    </div>
+
+    <section class="contenedor-principal">
+        <section class="contenedor-principal">
+
+            <!-- CUADRO 1 -->
+            <div class="cuadro">
+                <h3>Fotografía</h3>
+                <div class="contenido">
+                    <img src="traima/gaticoo.JPG" alt="">
+                    <img src="traima/DSCN1913.JPG" alt="">
+                    <img src="traima/iglesia.JPG" alt="">
+                    <img src="traima/motico.JPG" alt="">
+                    <img src="traima/muertos.JPG" alt="">
+                    <img src="traima/niñap.JPG" alt="">
+                </div>
+            </div>
+
+            <!-- CUADRO 2 -->
+            <div class="cuadro">
+                <h3>Publicidad</h3>
+                <div class="contenido centro">
+                    <img src="traima/luchador.png" alt="">
+                    <img src="traima/veterina.png" alt="">
+                    <img src="traima/lona.png" alt="">
+                </div>
+            </div>
+
+            <!-- CUADRO 3 -->
+            <div class="cuadro">
+                <h3>Videos</h3>
+                <div class="contenido centro">
+                    <video src="traima/arte.mp4" controls></video>
+                    <video src="traima/Rotacion.mp4" controls></video>
+                    <video src="traima/terrenal.mp4" controls></video>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>@2025 Derechos Reservados Evelyn Monserrat</p>
+    </footer>
+    <script>
+    const elementos = document.querySelectorAll('.contenido img, .contenido video');
+
+    elementos.forEach(el => {
+        el.addEventListener('click', () => {
+            el.classList.toggle('ampliado');
+        });
+    });
+    
+</script>
+
+</body>
+</html>

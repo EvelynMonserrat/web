@@ -1,0 +1,147 @@
+body {
+    background-image: url('imagenes/fondito3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* header */
+header {
+    background-color: #7a8b6e;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+nav button {
+    background-color: #e9640f;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Courier New', monospace;
+    transition: all 0.2s ease;
+}
+
+nav button:hover {
+    transform: scale(1.05);
+}
+
+/* contenedor central */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;  /* centra horizontal */
+    align-items: center;      /* centra vertical */
+    padding: 40px;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: center;
+    align-items: stretch; /*hace que todos tengan la misma altura */
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* cuadros generales */
+.cuadro {
+    background-color: #f8b97a;
+    border-radius: 10px;
+    color: #2b1a0f;
+    padding: 20px;
+    width: 290px; /*para que todos tengan el mismo ancho */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    font-family: "Architects Daughter", cursive;
+}
+
+/* bloque del personaje */
+.perfil {
+    background-color: #e9640f;
+}
+
+.imagen-personaje {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* bloque central (habilidades y procesos) */
+.bloque-medio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.habilidades, .procesos { /*distribuir el espacio de manera equitativa de los elementos que están dentro de otro elemento*/
+    flex: 1;
+}
+
+/* descripción */
+.descripcion {
+    background-color: #e9640f;
+    color: white;
+}
+
+/* títulos */
+h3 {
+    margin-top: 0;
+    color: #4a2c0a;
+}
+
+/*footer */
+footer {
+    background-color: #7a8b6e;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: bold;
+    font-family: 'Courier New', monospace;
+}
+
+/* responsiva: es para que la página tenga un orden y las imagenes no se muevan de una manera o se distorcionen*/
+@media (max-width: 900px) {
+    .contenedor {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cuadro {
+        width: 80%;
+    }
+
+    .bloque-medio {
+        flex-direction: column;
+    }
+}
+
+
+/*el css de la tipografia de la descripción*/
+.architects-daughter-regular {  
+  font-family: "Architects Daughter", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+nav button.activo {
+  background-color: #f3a55a; /* esto es para que el botón se ponga de otro color cuando sea seleccionado */
+  color: #fff;
+  transform: scale(1.05);
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}

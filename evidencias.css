@@ -1,0 +1,110 @@
+body {
+    background-image: url('imagenes/fondito3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    font-family: 'Courier New', monospace;
+}
+
+/* header */
+header {
+    background-color: #7a8b6e;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+nav a {
+    background-color: #e9640f;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.2s ease;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+}
+
+nav a:hover {
+    transform: scale(1.05);
+}
+
+nav a.activo {
+    background-color: #f3a55a;
+    color: #ffffff;
+}
+
+/* contenedor principal */
+.contenedor-evidencias {
+  text-align: center;
+  background-color: #fca868;
+  width: 80%;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* texto */
+.titulo-evidencias {
+  font-size: 2em;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.texto-evidencias {
+  background-color: #f57c3a;
+  color: white;
+  padding: 1px;
+  border-radius: 20px;
+  font-size: 1.1em;
+  line-height: 1.5;
+  margin-bottom: 30px;
+  font-family: "Architects Daughter", cursive;
+}
+
+/* imágenes*/
+.imagenes-evidencias {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.imagenes-evidencias img {
+  width: 230px;
+  height: 230px;
+  object-fit: cover;         /*mantiene proporciones */
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+/* Efecto al pasar el cursor */
+.imagenes-evidencias img:hover {
+  transform: scale(1.1);
+}
+
+/* Efecto de ampliación al hacer clic */
+.imagenes-evidencias img.ampliada {
+  transform: scale(1.2);
+  z-index: 10;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+/* footer */
+footer {
+    background-color: #7a8b6e;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-weight: bold;
+}
